@@ -1,132 +1,204 @@
 /* General Reset */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+/* Universal Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body Styles */
 body {
-  font-family: 'Verdana', sans-serif;
-  background-color: #121212;
-  color: #ffffff;
-  line-height: 1.6;
-  background-image: url('path-to-pixel-art-tile.png');
-  background-size: 16px 16px;
   font-family: 'Press Start 2P', cursive;
-
+  /* Sets the font family */
+  background-color: #121212;
+  /* Dark background */
+  color: #ffffff;
+  /* White text */
+   /* Improved readability */
+   background-image: url("assets/background.gif");
+  line-height: 1.6;
+  /* Pixel art background */
+  background-size: cover;
+  /* Set background size */
+  background-repeat: no-repeat;
+  /* Set background to not repeat */
+  background-attachment: fixed;
+  /* Set background to stay still */
 }
 
-/* Navigation Bar */
+/* Ensure the body and html elements fill the screen */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navigation Bar Styles */
 header nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
   background-color: #181818;
+  /* Dark background for navbar */
   padding: 10px;
 }
 
 header nav ul li {
   margin: 0 15px;
+  /* Space between links */
 }
 
 header nav ul li a {
   text-decoration: none;
+  /* Remove underline */
   color: #e91e63;
+  /* Default link color */
   font-size: 1.2rem;
+  /* Increase link font size */
   transition: color 0.3s ease;
+  /* Smooth color transition */
 }
 
 header nav ul li a:hover {
   color: #9c27b0;
+  /* Color change on hover */
 }
 
-/* Intro Section */
+/* Intro Section Styling */
 .intro {
   text-align: center;
-  padding: 50px 20px;
+  padding: 60px 20px;
 }
 
 .intro h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #e91e63;
 }
 
 .intro p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 15px 0;
 }
 
-.project img {
-  border: 4px solid #e91e63;
-  box-shadow: 0 0 10px #9c27b0, 0 0 20px #e91e63;
-  margin-bottom: 15px;
-}
-
+/* Profile Picture Styling */
 .profile-pic {
+  max-width: 15%;
+  /* Limit profile image size */
+  height: auto;
   border: 4px solid #9c27b0;
+  /* Border color */
   filter: drop-shadow(4px 4px 0 #e91e63);
+  /* Shadow effect */
+  display: block;
+  margin: 0 auto;
 }
 
-/* Footer */
-footer {
-  text-align: center;
+/* Projects Section Styling */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* Space between items */
+  justify-content: center;
+  /* Center items */
+}
+
+.project {
+  width: 300px;
+  border: 2px solid #9c27b0;
+  /* Border color */
   padding: 15px;
-  background-color: #181818;
-  color: #888;
-  font-size: 0.9rem;
+  background-color: #1f1f1f;
+  /* Dark background for project boxes */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Shadow for depth */
 }
 
-nav ul li a.active {
+.project img {
+  width: 100%;
+  /* Make images fit the box */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project h2 {
+  font-size: 1.5rem;
+  color: #e91e63;
+  /* Project title color */
+  margin-bottom: 10px;
+}
+
+.project h2:hover {
+  color: #9c27b0;
+}
+
+.project a {
   color: #9c27b0;
   border-bottom: 2px solid #9c27b0;
 }
 
-/* Contact Form */
-form {
-  max-width: 400px;
-  margin: 20px auto;
-  padding: 20px;
-  background: #1f1f1f;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.project a:hover {
+  color: #e91e63
 }
 
-form label {
-  display: block;
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
-
-form input,
-form textarea,
-form button {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0 20px;
-  border: none;
-  border-radius: 5px;
+.project p {
   font-size: 1rem;
-}
-
-form input,
-form textarea {
-  background: #333;
   color: #fff;
 }
 
-form button {
-  background: linear-gradient(145deg, #e91e63, #9c27b0);
-  color: #fff;
-  font-family: 'Press Start 2P', cursive;
-  border: 2px solid #9c27b0;
-  box-shadow: 0 4px #121212;
-  text-transform: uppercase;
-  padding: 10px 15px;
+.project:hover {
+  transform: scale(1.05);
+  /* Slight zoom on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  /* Enhanced shadow */
+  transition: all 0.3s ease;
+  /* Smooth transition */
 }
 
-form button:hover {
-  background: #9c27b0;
+/* Portfolio Section Styling */
+.portfolio {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.portfolio h1 {
+  font-size: 3rem;
   color: #e91e63;
+  margin-bottom: 20px;
 }
+
+/* Main Container Styling */
+main {
+  flex: 1;
+  /* Ensures it takes up available space */
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #181818;
+  /* Dark background for footer */
+  color: #888;
+  /* Lighter text for footer */
+  font-size: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+nav ul li a.active {
+  color: #9c27b0;
+  /* Active link color */
+  border-bottom: 2px solid #9c27b0;
+  /* Underline for active links */
+}
+

@@ -1,0 +1,196 @@
+/* Contact Form Styling */
+.contact {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.contact h1 {
+    color: #e91e63;
+    font-size: 2.5rem;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #1f1f1f;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #333;
+    /* Dark background for inputs */
+    color: #fff;
+}
+
+form button {
+    background: linear-gradient(145deg, #e91e63, #9c27b0);
+    /* Gradient button */
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    border: 2px solid #9c27b0;
+    box-shadow: 0 4px #121212;
+    /* Shadow for button */
+    text-transform: uppercase;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #9c27b0;
+    /* Button hover color */
+    color: #e91e63;
+}
+
+/* About Section Styling */
+.about {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.about h1 {
+    color: #e91e63;
+    font-size: 2.5rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #ddd;
+    /* Lightened text for readability */
+}
+
+/* Gallery Section */
+
+.about-highlight-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1f1f1f;
+    border: 2px solid #9c27b0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 20px auto; /* Add some spacing */
+    max-width: 1685px; /* Optional: Adjust width */
+    gap: 20px;
+  }
+  
+  /* Image inside the box */
+  .about-highlight-box img {
+    max-width: 30%;
+    /* Limit profile image size */
+    height: auto;
+    border: 4px solid #9c27b0;
+    /* Border color */
+    filter: drop-shadow(4px 4px 0 #e91e63);
+    /* Shadow effect */
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Text content inside the box */
+  .about-highlight-box .text-content {
+    flex: 1; /* Ensures the text takes the remaining space */
+    color: #fff;
+  }
+  
+  .about-highlight-box .text-content h2 {
+    color: #e91e63;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-highlight-box .text-content p {
+    text-align: left;
+    font-size: 1.2rem;
+    color: #ddd;
+  }
+
+.about-gallery {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.about-gallery h1 {
+    font-size: 3rem;
+    color: #e91e63;
+    margin-bottom: 20px;
+}
+
+
+.gallery-section {
+    margin-top: 40px;
+}
+
+.gallery-section p {
+    font-size: 1rem;
+    margin: 15px 0;  
+}
+
+.gallery-section h2 {
+    font-size: 2rem;
+    color: #9c27b0;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* Wrap items to the next line when space runs out */
+    justify-content: center;
+    /* Center the boxes in the section */
+    gap: 20px;
+    /* Add spacing between items */
+}
+
+.gallery-item {
+    flex: 1 1 calc(30% - 20px);
+    /* Responsive width: ~30% minus gap */
+    max-width: 550px;
+    /* Limit box width */
+    background-color: #1f1f1f;
+    border: 2px solid #9c27b0;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.gallery-item p {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.gallery-item .description {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
