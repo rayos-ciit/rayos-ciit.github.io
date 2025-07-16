@@ -16,8 +16,8 @@ body {
   /* Dark background */
   color: #ffffff;
   /* White text */
-   /* Improved readability */
-   background-image: url("assets/background.gif");
+  /* Improved readability */
+  background-image: url("assets/background.gif");
   line-height: 1.6;
   /* Pixel art background */
   background-size: cover;
@@ -99,82 +99,6 @@ header nav ul li a:hover {
   margin: 0 auto;
 }
 
-/* Projects Section Styling */
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  /* Space between items */
-  justify-content: center;
-  /* Center items */
-}
-
-.project {
-  width: 300px;
-  border: 2px solid #9c27b0;
-  /* Border color */
-  padding: 15px;
-  background-color: #1f1f1f;
-  /* Dark background for project boxes */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  /* Shadow for depth */
-}
-
-.project img {
-  width: 100%;
-  /* Make images fit the box */
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.project h2 {
-  font-size: 1.5rem;
-  color: #e91e63;
-  /* Project title color */
-  margin-bottom: 10px;
-}
-
-.project h2:hover {
-  color: #9c27b0;
-}
-
-.project a {
-  color: #9c27b0;
-  border-bottom: 2px solid #9c27b0;
-}
-
-.project a:hover {
-  color: #e91e63
-}
-
-.project p {
-  font-size: 1rem;
-  color: #fff;
-}
-
-.project:hover {
-  transform: scale(1.05);
-  /* Slight zoom on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-  /* Enhanced shadow */
-  transition: all 0.3s ease;
-  /* Smooth transition */
-}
-
-/* Portfolio Section Styling */
-.portfolio {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.portfolio h1 {
-  font-size: 3rem;
-  color: #e91e63;
-  margin-bottom: 20px;
-}
-
 /* Main Container Styling */
 main {
   flex: 1;
@@ -201,4 +125,3 @@ nav ul li a.active {
   border-bottom: 2px solid #9c27b0;
   /* Underline for active links */
 }
-

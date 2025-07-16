@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-gallery">
+      <h1>About Me</h1>
+
+      <!-- Section for Favorite Songs -->
+      <div class="gallery-section">
+        <h2>Favorite Songs</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/song1.jpg" alt="Song 1">
+            <p>"Song Title 1" - Artist</p>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/song2.jpg" alt="Song 2">
+            <p>"Song Title 2" - Artist</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section for Projects -->
+      <div class="gallery-section">
+        <h2>Non-Related Projects</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/project1.jpg" alt="Project 1">
+            <p>Project Name 1</p>
+            <p class="description">Short description of the project.</p>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/project2.jpg" alt="Project 2">
+            <p>Project Name 2</p>
+            <p class="description">Short description of the project.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Janrein S. Rayos. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
+
+
+/* Gallery Section */
+.about-gallery {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.about-gallery h1 {
+  font-size: 3rem;
+  color: #e91e63;
+  margin-bottom: 20px;
+}
+
+.gallery-section {
+  margin-top: 40px;
+}
+
+.gallery-section h2 {
+  font-size: 2rem;
+  color: #9c27b0;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 20px; /* Space between boxes */
+}
+
+.gallery-item {
+  width: 80%; /* Adjust width for better alignment */
+  max-width: 600px; /* Prevent overly large boxes */
+  background-color: #1f1f1f;
+  border: 2px solid #9c27b0;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.gallery-item p {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.gallery-item .description {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+<div class="projects">
+        <div class="project">
+          <a href="https://github.com/your-project-repo" target="_blank">
+            <h2>Project Title 1</h2>  
+          </a>
+          <img src="https://via.placeholder.com/300x200" alt="Project Screenshot">
+          <p>Description of the project. What it does, technologies used, and its purpose.</p>
+        </div>
+        <div class="project">
+          <a href="https://github.com/your-project-repo" target="_blank">
+            <h2>Project Title 2</h2>
+          </a>
+          <img src="https://via.placeholder.com/300x200" alt="Project Screenshot">
+          <p>Description of the project. What it does, technologies used, and its purpose.</p>
+        </div>
+        <div class="project">
+          <a href="https://github.com/your-project-repo" target="_blank">
+            <h2>Project Title 1</h2>
+          </a>
+          <img src="https://via.placeholder.com/300x200" alt="Project Screenshot">
+          <p>Description of the project. What it does, technologies used, and its purpose.</p>
+        </div>
+        <div class="project">
+          <a href="https://github.com/your-project-repo" target="_blank">
+            <h2>Project Title 2</h2>
+          </a>
+          <img src="https://via.placeholder.com/300x200" alt="Project Screenshot">
+          <p>Description of the project. What it does, technologies used, and its purpose.</p>
+        </div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="portfolio">
+      <h1>My Music</h1>
+      <p>this part of the portfolio is comprehensive display of my work in relation to my musical journey, featuring
+        works from my band "Beatsilog" and solo compositions under the name "Myst_iU". This also serves as a testament
+        to my growth and experience as a musician and recording artist over the past five years.</p>
+      <div class="projects">
+        <div class="project">
+          <h2>Project Title 1</h2>
+          <embed type="video/webm" src=https://www.youtube.com/watch?v=3Ya7Z_TX73c width="400" height="300">
+          <p>Description of the project. What it does, technologies used, and its purpose.</p>
+        </div>
+        <div class="project">
+          <a href="https://github.com/your-project-repo" target="_blank">
+            <h2>Project Title 2</h2>
+          </a>
+          <img src="https://via.placeholder.com/300x200" alt="Project Screenshot">
+          <p>Description of the project. What it does, technologies used, and its purpose.</p>
+        </div>
+        <div class="project">
+          <a href="https://github.com/your-project-repo" target="_blank">
+            <h2>Project Title 1</h2>
+          </a>
+          <img src="https://via.placeholder.com/300x200" alt="Project Screenshot">
+          <p>Description of the project. What it does, technologies used, and its purpose.</p>
+        </div>
+        <div class="project">
+          <a href="https://github.com/your-project-repo" target="_blank">
+            <h2>Project Title 2</h2>
+          </a>
+          <img src="https://via.placeholder.com/300x200" alt="Project Screenshot">
+          <p>Description of the project. What it does, technologies used, and its purpose.</p>
+        </div>
+        <!-- Add more project sections as needed -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 Janrein S. Rayos. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

@@ -85,41 +85,45 @@ form button:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     padding: 20px;
-    margin: 20px auto; /* Add some spacing */
-    max-width: 1685px; /* Optional: Adjust width */
+    margin: 20px auto;
+    /* Add some spacing */
+    max-width: 1685px;
+    /* Optional: Adjust width */
     gap: 20px;
-  }
-  
-  /* Image inside the box */
-  .about-highlight-box img {
+}
+
+/* Image inside the box */
+.about-highlight-box img {
     max-width: 30%;
     /* Limit profile image size */
     height: auto;
     border: 4px solid #9c27b0;
     /* Border color */
+    border-radius: 10px;
     filter: drop-shadow(4px 4px 0 #e91e63);
     /* Shadow effect */
     display: block;
     margin: 0 auto;
-  }
-  
-  /* Text content inside the box */
-  .about-highlight-box .text-content {
-    flex: 1; /* Ensures the text takes the remaining space */
+}
+
+/* Text content inside the box */
+.about-highlight-box .text-content {
+    flex: 1;
+    /* Ensures the text takes the remaining space */
     color: #fff;
-  }
-  
-  .about-highlight-box .text-content h2 {
+}
+
+.about-highlight-box .text-content h2 {
     color: #e91e63;
     font-size: 1.8rem;
     margin-bottom: 10px;
-  }
-  
-  .about-highlight-box .text-content p {
+}
+
+.about-highlight-box .text-content p {
     text-align: left;
     font-size: 1.2rem;
     color: #ddd;
-  }
+}
 
 .about-gallery {
     padding: 3rem 2rem;
@@ -139,7 +143,7 @@ form button:hover {
 
 .gallery-section p {
     font-size: 1rem;
-    margin: 15px 0;  
+    margin: 25px 0;
 }
 
 .gallery-section h2 {
@@ -147,6 +151,7 @@ form button:hover {
     color: #9c27b0;
     margin-bottom: 20px;
 }
+
 
 .gallery-grid {
     display: flex;
@@ -176,7 +181,18 @@ form button:hover {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    border: 2px solid #9c27b0;
     margin-bottom: 10px;
+}
+
+.gallery-item img:hover {
+    border: 2px solid #e91e63;
+}
+
+.gallery-item h3 {
+    font-size: 0.8rem;
+    color: #e91e63;
+    margin-bottom: 20px;
 }
 
 .gallery-item p {
@@ -186,6 +202,7 @@ form button:hover {
 }
 
 .gallery-item .description {
+    text-align: left;
     font-size: 0.9rem;
     color: #ccc;
 }
@@ -194,3 +211,18 @@ form button:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
+
+.gallery-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #9c27b0;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item video:hover {
+    border: 2px solid #e91e63;
+}
+
+  
